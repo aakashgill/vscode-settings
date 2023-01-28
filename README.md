@@ -29,25 +29,38 @@
 
 ```
 {
-  "editor.fontSize": 17,
-  "window.zoomLevel": 0,
-  "editor.wordWrap": "on",
-  "files.autoSave": "onFocusChange",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.fontFamily": "Monaco",
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "emmet.includeLanguages": {"javascript":"javascriptreact"},
-  "terminal.external.osxExec": "iTerm.app",
-  "terminal.explorerKind": "external",
-  "workbench.statusBar.visible": true,
-  "window.title": "${activeEditorMedium}${separator}${rootName}",
-  "workbench.sideBar.location": "left",
-  "gitlens.advanced.messages": {
-      "suppressShowKeyBindingsNotice": true
-  },
-  "workbench.colorTheme": "Dracula",
-  "editor.parameterHints": false
-}
-
-```
+    "editor.wordWrap": "on",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.linkedEditing": true,
+    "editor.fontSize": 14,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "workbench.colorTheme": "Dracula",
+    "workbench.sideBar.location": "right",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external",
+    "search.useGlobalIgnoreFiles": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "html.format.templating": true,
+    "html.format.indentInnerHtml": true,
+    "diffEditor.renderSideBySide": false,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "wp-content/cache/**/*": true,
+        "wp-includes/**/*": true
+    },
+    "prettier.printWidth": 120,
+    "prettier.tabWidth": 4,
+    "workbench.colorCustomizations": {
+        "sideBar.background": "#000",
+        "activityBar.background": "#111",
+        "editor.background": "#000",
+    },
+}```
