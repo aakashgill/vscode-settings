@@ -63,4 +63,5 @@
         "activityBar.background": "#111",
         "editor.background": "#000",
     },
-}```
+}
+```
